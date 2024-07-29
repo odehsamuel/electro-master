@@ -1,0 +1,16 @@
+<%- include('../includes/default/head') %>
+<link type="text/css" rel="stylesheet" href="/css/admin.css" />
+
+<%- include('../includes/default/header') %>
+
+<!-- SECTION -->
+<div class="section">
+<!-- container -->
+<div class="container">
+  <%- include("../includes/admin-products/product-form", {productPath : '/admin/products/edit?', formHeading : "Update Product", product : product, requiredImage : false}) %>   
+</div>
+<!-- /container -->
+</div>
+<!-- /SECTION -->
+
+<%- include('../includes/default/footer') %>

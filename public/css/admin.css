@@ -1,0 +1,155 @@
+.products-tabs {
+    margin-bottom: 3.5rem;
+}
+
+#add-btn{
+    padding: 1rem 0.75rem;
+    background-color: #D10024;
+    color: #1E1F29;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.product-form{
+    margin: 3rem auto;
+    max-width: 50rem;
+    background-color: #b1b1ba;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px #202022 ;
+    padding: 1.5rem 1rem;
+}
+
+/* #image input{
+    margin-top: 0.05rem;
+    padding: 0.35rem 0.25rem;
+    border-radius: 4px;
+    border:1px solid rgb(167, 167, 180);
+    font: inherit;
+    box-sizing: border-box;
+} */
+
+input, select, textarea{
+    width: 100%;
+    margin-top: 0.05rem;
+    padding: 0.35rem 0.25rem;
+    border-radius: 4px;
+    border:1px solid rgb(167, 167, 180);
+    font: inherit;
+    box-sizing: border-box;
+}
+
+#prices{
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea{
+    resize: block;
+}
+
+input:focus{
+    background-color: rgb(241, 241, 255);
+    border:1px solid rgb(167, 167, 180);
+}
+
+input::placeholder{
+    font-size: 0.8rem;
+}
+
+
+label{
+    display: block;
+    margin-top: 1.35rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color:  #333;
+}
+
+.product-btn{
+    border-radius: 4px;
+    color: #f5f3f3;
+    background-color: #192749;
+    padding: 0.25rem 0.5rem;
+    font-weight: 5rem;
+}
+
+.product-btn-alt{
+    border-radius: 4px;
+    color: #0d0d10;
+    background-color: #D10024;
+    padding: 0.25rem 0.5rem;
+    font-weight: 5rem;
+}
+
+.product .product-body .product-btns>a {
+    line-height: 40px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.product .product-body .product-btns>a button{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+  }
+  
+  .product .product-body .product-btns>a button:hover {
+    background-color: #E4E7ED;
+    color: #D10024;
+    border-radius: 50%;
+  }
+
+  .product .product-body .product-btns>a .tooltipp {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    -ms-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    width: 150px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 10px;
+    background: #1e1f29;
+    color: #FFF;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .product .product-body .product-btns>a:hover .tooltipp {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(-50%, -5px);
+    -ms-transform: translate(-50%, -5px);
+    transform: translate(-50%, -5px);
+  }
+
+  .adminrow{
+    margin-bottom: 3rem;
+  }
+
+  .image-container{
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container input{
+    max-width: 20rem;
+  }
+
+  .image-container img{
+    display: none;
+    margin-left: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  

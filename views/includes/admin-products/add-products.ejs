@@ -1,0 +1,25 @@
+<div class="col-md-3 col-xs-6">
+  <div class="product">
+      <div class="product-img">
+          <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
+          <div class="product-label">
+              <span class="sale">-30%</span>
+          </div>
+      </div>
+      <div class="product-body">
+          <p class="product-category"><%= product.category %></p>
+          <h3 class="product-name"><a href="#"><%= product.title %></a></h3>
+          <h4 class="product-price">$<%= product.price %> <del class="product-old-price">$<%= product.oldprice %></del></h4>
+          <div class="product-rating">
+          </div>
+          <div class="product-btns">
+              <!-- <a href="/admin/products/edit/" class="add-to-wishlist"><button><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button></a> -->
+              <a href="/admin/products/delete/<%= product.id %>" data-productId="<%= product.id %>" class="remove-product"><button><i class="fa fa-trash"></i><span class="tooltipp">remove product</span></button></a>
+              <a href="/admin/products/edit/<%= product.id %>" data-productId="<%= product.id %>" class="quick-view"><button><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button></a>
+          </div>
+      </div>
+      <div class="add-to-cart">
+          <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+      </div>
+  </div>
+</div>

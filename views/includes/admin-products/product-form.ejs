@@ -1,0 +1,48 @@
+<form action="<%= productPath %>_csrf=<%= locals.csrfToken %>" method="POST" class="product-form" enctype="multipart/form-data">
+    <h2><%= formHeading %></h2>
+    <ul>
+      <li>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" value="<%= product.title %>" required />
+      </li>
+      <div class="image-container">
+          <li>
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpg, image/jpeg " <% if (requiredImage) { %>
+             required
+            <% } %> />
+          </li>
+          <img src="" alt="Selected Image">
+      </div>
+      <li>
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price" value="<%= product.price %>" min="0.05" step="0.05" required />
+      </li>
+      <!-- <div id="prices">
+      </div> -->
+      <li>
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="laptops">Laptops</option>
+          <option value="smartphones">Smartphones</option>
+          <option value="cameras">Cameras</option>
+          <option value="accessories">Accessories</option>
+        </select>
+      </li>
+      <li>
+        <label for="summary">Summary</label>
+        <input type="text" id="summary" name="summary" value="<%= product.summary %>" required />
+      </li>
+      <li>
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="10" required><%= product.description %></textarea>
+      </li>
+
+    </ul>
+  
+    <div id="buttons">
+        <button type="reset" class="product-btn-alt">Reset</button>
+        <button class="product-btn">Save</button>
+      </div>
+    </div>
+  </form>
